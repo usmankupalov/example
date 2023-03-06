@@ -19,6 +19,7 @@ public class UserServiceIml implements UserService{
     public void addUser(User user) {
         user.setLogin(user.getLogin());
         user.setPassword(user.getPassword());
+        user.setFirstname(user.getFirstname());
         userRepository.save(user);
     }
 

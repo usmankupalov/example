@@ -16,9 +16,11 @@ public class User {
     private Integer userId;
     private String login;
     private String password;
+    private String firstname;
 
-    public User(String login, String password) {
+    public User(String login, String password, String firstname) {
         this.login = login;
         this.password = password;
+        this.firstname = firstname;
     }
 }
